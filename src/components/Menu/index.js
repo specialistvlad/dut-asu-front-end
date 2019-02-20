@@ -10,10 +10,11 @@ import BarChartIcon from "@material-ui/icons/BarChart";
 import LayersIcon from "@material-ui/icons/Layers";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import { Link } from "react-router-dom";
+import styles from "./styles";
 
 export const mainListItems = (
   <div>
-    <Link to="/">
+    <Link to="/" style={styles}>
       <ListItem button>
         <ListItemIcon>
           <DashboardIcon />
@@ -22,7 +23,7 @@ export const mainListItems = (
       </ListItem>
     </Link>
 
-    <Link to="/teachers">
+    <Link to="/teachers" style={styles}>
       <ListItem button>
         <PeopleIcon>
           <DashboardIcon />
